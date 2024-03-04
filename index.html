@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+    <title>Smart Fit</title>
+</head>
+
+<body>
+
+    <header class="logo">
+
+        <img src="assets/imgs/logo.svg" alt="Logo da SmartFit">
+
+    </header>
+
+
+    <main>
+
+        <section class="titulo">
+            <h1>REABERTURA <br> SMART FIT</h1>
+
+            <p>O horário de funcionamento das nossas unidades está seguindo os decretos de cada município. Por isso,
+                confira
+                aqui <br> se sua unidade está aberta e as medidas de segurança que estamos seguindo.</p>
+
+        </section>
+
+        <section class="busca">
+
+            <div class="relogio">
+                <img src="assets/imgs/icon-hour.png" alt="imagem de um relogio">
+                <p> horário</p>
+
+
+            </div>
+
+            <h2>Qual período quer treinar?</h2>
+
+            <form action="#">
+
+                <div class="opcoes">
+
+                    <div class="opcoes-turnos">
+
+                        <div>
+                            <input type="radio" name="turno" id="imanha">
+                            <label for="imanha">manhã</label>
+
+                        </div>
+                        <div>
+                            <input type="radio" name="turno" id="itarde">
+                            <label for="itarde">tarde</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="turno" id="inoite">
+                            <label for="inoite">noite</label>
+                        </div>
+
+                    </div>
+
+                    <div class="opcoes-horarios">
+                        <p> 06:00 às 12:00 </p>
+                        <p> 12:01 às 18:00 </p>
+                        <p> 18:01 às 23:00 </p>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="opcoes-filtros">
+
+                    <div class="filtrar-uni-fecha">
+                        <input type="checkbox" id="cunidfech">
+                        <label for="cunidfech">Exibir unidades fechadas</label>
+                    </div>
+
+                    <div class="resulEncontrados">
+                        <p>resultados encontrados: </p>
+                        <span id="qEncontrada">0</span>
+                    </div>
+
+                </div>
+
+
+
+                <div class="botoes">
+                    <input type="submit" value="encontrar unidade" id="buscarUnidade">
+                    <input type="reset" value="limpar">
+
+                </div>
+
+            </form>
+
+
+        </section>
+
+    
+
+    <section class="legenda">
+
+        <div class="div-legenda">
+            <h3 class="legenda-titulo">máscara</h3>
+            <div class="legenda-imagem">
+                <div>
+                    <img src="assets/imgs/required-mask.png" alt="">
+                    <p>obrigatório</p>
+
+                </div>
+                <div>
+
+                    <img src="assets/imgs/recommended-mask.png" alt="">
+                    <p>recomendado</p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="div-legenda">
+            <h3 class="legenda-titulo">toalha</h3>
+            <div class="legenda-imagem">
+                <div>
+                    <img src="assets/imgs/required-towel.png" alt="">
+                    <p>obrigatório</p>
+                    
+                </div>
+                <div>
+                    <img src="assets/imgs/recommended-towel.png" alt="">
+                    <p>recomendado</p>
+                </div>
+            </div>
+
+
+        </div> 
+
+
+        <div class="div-legenda">
+            <h3 class="legenda-titulo">bebedouro</h3>
+
+            <div class="legenda-imagem">
+                <div>
+                    <img src="assets/imgs/partial-fountain.png" alt="">
+                    <p>parcial</p>
+                </div>
+                <div>
+                    <img src="assets/imgs/not_allowed-fountain.png" alt="">
+                    <p>proibido</p>
+                </div>
+            </div>
+
+
+        </div> 
+
+
+        <div class="div-legenda">
+            <h3 class="legenda-titulo">vestiários</h3>
+
+            <div class="legenda-imagem">
+                <div>
+                    <img src="assets/imgs/allowed-locker_room.png" alt="">
+                    <p>liberado</p>
+                </div>
+                <div>
+                    <img src="assets/imgs/partial-locker_room.png" alt="">
+                    <p>parcial</p>
+                </div>
+                <div>
+                    <img src="assets/imgs/closed-locker_room.png" alt="">
+                    <p>fechado</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+
+        
+        <section class="dados" id="dados-Result">
+
+            <!-- <div class="resultados">
+                <div class="endereco">
+                    <p id="status">aberto</p>
+                    <h4 id="cidade">vicente linhares</h4>
+                    <p id="endereco-completo">Av. Raul Lopes, 1000 &#8211; Noivos<br>Teresina, PI</p>
+                </div>
+                <div class="resul-img">
+                    <img src="assets/imgs/forbidden-lockerroom.png" alt="">
+                    <img src="assets/imgs/partial-lockerroom.png" alt="">
+                    <img src="assets/imgs/forbidden-lockerroom.png" alt="">
+                    <img src="assets/imgs/partial-lockerroom.png" alt="">
+                </div>
+                <div class="resul-horarios">
+                    <h3 id="dia-semana">Seg. à Sex.</h3>
+                    <p id="hora">06h às 22h</p>
+                </div>
+            </div>
+    
+            
+        </section> -->
+
+    </section>
+
+</main>
+
+<footer>
+    <img src="assets/imgs/logo.svg" alt="logo da smart fit">
+    <p>Todos os direitos reservados - 2020</p>
+</footer>
+
+<script src="scipts/teste.js"></script>
+</body>
+
+</html>
