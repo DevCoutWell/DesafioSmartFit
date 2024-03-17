@@ -11,10 +11,12 @@ buscarUnidade.addEventListener("click", async (event) => {
 
     event.preventDefault();
 
-    const dados = await fetch(`https://test-frontend-developer.s3.amazonaws.com/data/locations.json`).then(response => response.json());
+    const APIresponse = await fetch(`https://test-frontend-developer.s3.amazonaws.com/data/locations.json`);
+
+    const dados = await APIresponse.json();
 
     exibirDados(dados);
-console.log(dados)
+    console.log(dados)
 
 
 
@@ -27,57 +29,24 @@ console.log(dados)
 function exibirDados(dados) {
 
 
-    if (sectionDados.children.length > 0) {
-        alert("não pode");
-        return 0;
-    }
-
-
 
     dados.locations.forEach(element => {
 
 
 
-        
 
 
-            let towel = element.towel;
-            let mask = element.mask;
-            let fountain = element.fountain;
-            let title = element.title;
-            let content = element.content;
-            let locker_room = element.locker_room;
 
-            // if(!element.opened){
-            //     console.log(element.title)
-                
-            
+        let towel = element.towel;
+        let mask = element.mask;
+        let fountain = element.fountain;
+        let title = element.title;
+        let content = element.content;
+        let locker_room = element.locker_room;
 
-            //     sectionDados.innerHTML += `<div class="resultados">
-            //     <div class="endereco">
-            //     <p id="status" class = "statusFechado">Fechado</p>
-            //         <h4 id="cidade">${title}</h4>
-            //         <p id="endereco-completo">${element.street + ',' + element.region + ',' + element.city_name + '-' + element.uf}</p>
-            //     </div >`
-                
-            
-                
-            // };
-            
-                
 
-            if (element.opened === false) {
 
-                sectionDados.innerHTML += `<div class="resultados">
-                <div class="endereco">
-                <p id="status" class = "statusFechado">Fechado</p>
-                    <h4 id="cidade">${title}</h4>
-                    <p id="endereco-completo">${content}</p>
-                </div >`
-                      
-        };
-        
-        if(element.opened === true){
+        if (element.opened === true) {
             sectionDados.innerHTML += `<div class="resultados">
             <div class="endereco">
             <p id="status">Aberto</p>
@@ -103,16 +72,16 @@ function exibirDados(dados) {
                         </div>`
         };
 
-        
-
-        
-});
 
 
-                            quantEncontrada.textContent = sectionDados.children.length;
-                            console.log(sectionDados.children);
+
+    });
+
+
+    quantEncontrada.textContent = dados.total;
+
+
 
 };
-
 
 
